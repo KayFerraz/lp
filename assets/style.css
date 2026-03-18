@@ -11,10 +11,10 @@
     margin: 2%;
 }
 .input{
-    width: 20%;
-    height:16%;
+    width: 98%;
+    height:50%;
     margin-bottom: 5%;
-    padding: 50px;
+    padding: 2px;
 }
 .divFundo{
     background-color: rgb(13, 8, 32);
@@ -22,6 +22,7 @@
     height: 10%;
     margin: 9%;
     border-radius: 2%;
+    padding: 20px;
 }
 .divBotao{
     display: flex; 
