@@ -9,28 +9,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-   <div  role="group" aria-label="Second group">
+  <div class="divFundo">
+     
+    <input class="form-control input" type="text" placeholder="Insira o número" aria-label="default input example">
+   <div  role="group" aria-label="Second group" class="divBotao">
     <button type="button" class="btn btn-secondary botaoNum">1</button>
     <button type="button" class="btn btn-secondary botaoNum">2</button>
-    <button type="button" class="btn btn-secondary botaoNum">3</button>
+    </div>
+
+    <div  role="group" aria-label="Second group" class="divBotao">
+      <button type="button" class="btn btn-secondary botaoNum">3</button>
      <button type="button" class="btn btn-secondary botaoNum">4</button>
-     <button type="button" class="btn btn-secondary botaoNum">5</button>
+    </div>
+
+    <div  role="group" aria-label="Second group" class="divBotao">
+      <button type="button" class="btn btn-secondary botaoNum">5</button>
       <button type="button" class="btn btn-secondary botaoNum">6</button>
+    </div>
+
+     <div  role="group" aria-label="Second group" class="divBotao">
       <button type="button" class="btn btn-secondary botaoNum">7</button>
       <button type="button" class="btn btn-secondary botaoNum">8</button>
+    </div>
+    
+    <div  role="group" aria-label="Second group" class="divBotao">
       <button type="button" class="btn btn-secondary botaoNum">9</button>
       <button type="button" class="btn btn-secondary botaoNum">0</button>
-</div>
-  <div class="d-grid gap-2 d-md-block">
-  <button class="btn btn-primary" type="button">+</button>
-  <button class="btn btn-primary" type="button">-</button>
-  <button class="btn btn-primary" type="button">X</button>
-  <button class="btn btn-primary" type="button"></button>
+    </div>
 
+  <div class="d-grid gap-2 d-md-block divBotao">
+  <button class="btn btn-primary botaoNumC" style="background-color: rgb(165, 0, 0);" type="button">+</button>
+  <button class="btn btn-primary botaoNumC" style="background-color: rgb(165, 0, 0);" type="button">-</button>
 
+   <div class="d-grid gap-2 d-md-block divBotao" > 
+  <button class="btn btn-primary botaoNumC " style="background-color: rgb(165, 0, 0);" type="button">x</button>
+  <button class="btn btn-primary botaoNumC " style="background-color:rgb(165, 0, 0);" type="button">/</button>
+   </div>
+
+  <div class="d-grid gap-2 d-md-block" class="divBotao"> 
+  <button class="btn btn-primary botaoNumC" style="background-color: rgb(211, 120, 0);" type="button">AC</button>
+  <button class="btn btn-primary botaoNumC" style="background-color: rgb(211, 120, 0);" type="button">=</button>
   </div>
-    </main>
+  </div>
+  
  <script src="./assets/script.js">
     
 </script>
