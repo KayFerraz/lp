@@ -1,26 +1,26 @@
 
 .botaoNum{
-    width: 25%;
+    width: 35%;
     height:9%;
     background-color: black;
-    margin: 2%;
+    margin: 1%;
 }
 .botaoNumC{
-    justify-content: center;
-    align-items: center;
     width: 27%;
     height:8%;
-    display: flex;
+    margin: 2%;
 }
 .input{
     width: 20%;
     height:16%;
+    margin-bottom: 5%;
 }
 .divFundo{
-    background-color: black;
+    background-color: rgb(13, 8, 32);
     width: 20%;
     height: 10%;
     margin: 9%;
+    border-radius: 2%;
 }
 .divBotao{
     display: flex; 
