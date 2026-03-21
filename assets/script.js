@@ -26,18 +26,18 @@ IgualdadeInput = document.querySelector('#igual')
 ACinput = document.querySelector('#AC');
 
 ACinput.addEventListener("click", () => {
+    tela.innerText=0;
     LimpaTela();
 })
 
 IgualdadeInput.addEventListener("click", () =>{
     switch(operador){
-        case 'A': resultado = num+num1;break;
-        case 'S': resultado = num1-num; break;
-        case 'M': resultado = num1*num;break;
-        case 'D': resultado = num1/num*1.00;break;
+        case 'A': tela.innerText = num+num1;break;
+        case 'S': tela.innerText= num1-num; break;
+        case 'M': tela.innerText = num1*num;break;
+        case 'D': tela.innerText = num1/num;break;
         default: LimpaTela();break;
         
-        tela.innerText = resultado;
     }
 })
 
