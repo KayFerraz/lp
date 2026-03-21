@@ -1,13 +1,129 @@
-SomaInput
-SubInput
+
+num=0
+num1 =0
+operador = ''
+
+tela = document.querySelector('#tela');
+
+Digito0 = document.querySelector('#D0');
+Digito1 = document.querySelector('#D1');
+Digito2 = document.querySelector('#D2');
+Digito3 = document.querySelector('#D3');
+Digito4 = document.querySelector('#D4');
+Digito5 = document.querySelector('#D5');
+Digito6 = document.querySelector('#D6');
+Digito7 = document.querySelector('#D7');
+Digito8 = document.querySelector('#D8');
+Digito9 = document.querySelector('#D9');
+
+OperadorMInput = document.querySelector('#operadorM');
+OperadorDInput = document.querySelector('#operadorD');
+OperadorAInput = document.querySelector('#operadorA');
+OperadorSInput = document.querySelector('#operadorS');
+
+IgualdadeInput = document.querySelector('#igual')
+
+ACinput = document.querySelector('#AC');
+
+ACinput.addEventListener("click", () => {
+    LimpaTela();
+})
+
+IgualdadeInput.addEventListener("click", () =>{
+    switch(operador){
+        case 'A': resultado = num+num1;break;
+        case 'S': resultado = num1-num; break;
+        case 'M': resultado = num1*num;break;
+        case 'D': resultado = num1/num*1.00;break;
+        default: LimpaTela();break;
+        
+        tela.innerText = resultado;
+    }
+})
+
+OperadorMInput.addEventListener("click", () =>{
+    operador='M'
+    salvaValor()
+})
+
+OperadorDInput.addEventListener("click", () =>{
+    operador='D'
+    salvaValor()
+})
+
+OperadorAInput.addEventListener("click", () =>{
+    operador='A'
+    salvaValor()
+})
+
+OperadorSInput.addEventListener("click", () =>{
+    operador='S'
+    salvaValor()
+})
 
 
-function soma(a,b){
+Digito0.addEventListener("click", ()=>{
+    adicionaNumero(0)
+})
 
+Digito1.addEventListener("click", ()=>{
+    adicionaNumero(1)
+})
+
+Digito2.addEventListener("click", ()=>{
+    adicionaNumero(2)
+})
+
+Digito3.addEventListener("click", ()=>{
+    adicionaNumero(3)
+})
+
+Digito4.addEventListener("click", ()=>{
+    adicionaNumero(4)
+})
+
+Digito5.addEventListener("click", ()=>{
+    adicionaNumero(5)
+})
+
+Digito6.addEventListener("click", ()=>{
+    adicionaNumero(6)
+})
+
+Digito7.addEventListener("click", ()=>{
+    adicionaNumero(7)
+})
+
+Digito8.addEventListener("click", ()=>{
+    adicionaNumero(8)
+})
+
+Digito9.addEventListener("click", ()=>{
+    num = adicionaNumero(9)
+})
+
+
+function adicionaNumero(valor){
+    num = num*10 + valor
+    tela.innerText = num
+    return num
 }
-function subtração(a,b){
-    
+
+function salvaValor(){
+    num1 = num
+    num = 0
 }
-function divisao(a,b){
-    
+
+function converteInt(valor)
+{
+    intValor= parseInt(valor);
+    if(isNaN(intvalor))   //Nan se o valor é nulo
+        intValor=0;
+    return intValor;
+}
+
+function LimpaTela(){
+    num=0
+    num1=0
+    operador=''
 }
